@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1380px;
+  --breakpoint-2xl: 1536px;
+
+  @keyframes bounceY {
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(5px);
+    }
+  }
+
+  --animate-bounceY: bounceY 1.2s infinite ease-in-out;
+}
+
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #1e1e1e;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h2 {
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
